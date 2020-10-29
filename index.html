@@ -10,13 +10,114 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-
+    <script
+      src="https://kit.fontawesome.com/3b249a239e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Vanilla Weather App</title>
   </head>
-
   <body>
+      <div class="body-wrapper">
     <div class="container">
-      <p>Testing</p>
+            <form>
+                                <div class="row">
+                        <div class="col-8">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter a different city name">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" id="search-button" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                    <div class="col-4">
+                                        <div class="current">
+                                            <button type="button" class="btn btn-outline-primary"
+                                                id="currentweather-button">Current</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            </form>
+            <br>
+            <h2>City Name</h2>
+            <div class=row middle-section>
+                <div class="col-4">
+                    <div class="TodayDetails">
+                        <span id="day"> </span>
+                        </span>
+                        <span id="time">
+                        </span>
+                        <br>
+                        <span id="sky-description">
+                        </span>
+                        <br>
+                        <span>
+                            Wind: <span id="wind">
+                            </span>
+            
+                        </span>
+            
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="images/rainy-and-sun.svg" alt="sun_and_cloud_image">
+                </div>
+                <div class="col-4">
+                    <div class="TodayTemp">
+                        <span id="celsius">°C</span>
+            
+                    </div>
+            
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="day-of-week">Sun</p>
+                            <i class="fas fa-cloud-sun center"></i>
+                            <p class="temperature">18°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="day-of-week">Mon</p>
+                            <i class="fas fa-cloud-rain center"></i>
+                            <p class="temperature">15°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="day-of-week">Tues</p>
+                            <i class="fas fa-sun center"></i>
+                            <p class="temperature">20°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="day-of-week">Wed</p>
+                            <i class="fas fa-bolt center"></i>
+                            <p class="temperature">14°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="day-of-week">Thurs</p>
+                            <i class="fas fa-cloud-rain center"></i>
+                            <p class="temperature">15°C</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
     </div>
     <script src="src/script.js"></script>
   </body>
