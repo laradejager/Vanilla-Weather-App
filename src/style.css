@@ -1,5 +1,5 @@
-.container {
-  max-width: 900px;
+.body-wrapper {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 50px;
 }
@@ -55,17 +55,17 @@ hr {
 .TodayTemp {
   position: relative;
   top: -5px;
-  left: 147px;
+  left: 123px;
   color: #939aa9;
   font-size: 30px;
   font-weight: 300;
 }
 
 img {
-  width: 190px;
+  width: 150px;
   position: relative;
-  top: -80px;
-  left: 230px;
+  top: -55px;
+  left: 205px;
 }
 .day-of-week {
   text-align: center;
