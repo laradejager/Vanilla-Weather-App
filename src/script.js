@@ -40,10 +40,10 @@ function searchLocation(position) {
 
 function showTemperature(response) {
   document.querySelector("h2").innerHTML = `Currently in ${response.data.name}`;
+
   document.querySelector(".TodayTemp").innerHTML = `${Math.round(
     response.data.main.temp
-  )} ${"°C"}`;
-
+  )}`;
   document.querySelector("#wind").innerHTML = `${
     response.data.wind.speed
   }${"km/h"}`;

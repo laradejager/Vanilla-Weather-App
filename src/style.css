@@ -54,18 +54,31 @@ hr {
 }
 .TodayTemp {
   position: relative;
-  top: -5px;
-  left: 123px;
+  top: -10px;
+  left: 115px;
   color: #939aa9;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 300;
 }
-
+#tempUnits {
+  position: relative;
+  top: -61px;
+  left: 140px;
+  color: #939aa9;
+  font-size: 20px;
+  font-weight: 300;
+}
+#Fahrenheit {
+  color: orangered;
+}
+#Fahrenheit:hover {
+  text-decoration: none;
+}
 img {
   width: 150px;
   position: relative;
   top: -55px;
-  left: 205px;
+  left: 208px;
 }
 .day-of-week {
   text-align: center;
