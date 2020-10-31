@@ -40,7 +40,7 @@ function searchLocation(position) {
 
 function showTemperature(response) {
   document.querySelector("h2").innerHTML = `Currently in ${response.data.name}`;
-
+  celsiusTemperature = Math.round(response.data.main.temp);
   document.querySelector(".TodayTemp").innerHTML = `${Math.round(
     response.data.main.temp
   )}`;
@@ -78,5 +78,16 @@ function SearchForCity(event) {
   let description = document.querySelector("h2");
   description.innerHTML = `Currently in ${cityTextInput.value}`;
 }
+
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector(".TodayTemp");
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+let celsiusTemperature = null;
+let fahrenheitLink = document.querySelector("#Fahrenheit");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 search("New York");

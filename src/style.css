@@ -63,22 +63,29 @@ hr {
 #tempUnits {
   position: relative;
   top: -61px;
-  left: 140px;
+  left: 137px;
   color: #939aa9;
   font-size: 20px;
   font-weight: 300;
 }
 #Fahrenheit {
-  color: orangered;
+  color: #ec6e4c;
 }
 #Fahrenheit:hover {
   text-decoration: none;
 }
+#Celsius {
+  color: #939aa9;
+}
+#Celsius:hover {
+  text-decoration: none;
+}
+
 img {
   width: 150px;
   position: relative;
   top: -55px;
-  left: 208px;
+  left: 200px;
 }
 .day-of-week {
   text-align: center;
