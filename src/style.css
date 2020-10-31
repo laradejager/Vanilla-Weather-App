@@ -69,16 +69,20 @@ hr {
   font-weight: 300;
 }
 #Fahrenheit {
-  color: #ec6e4c;
+  color: #939aa9;
 }
 #Fahrenheit:hover {
   text-decoration: none;
+  cursor: default;
+  color: #ec6e4c;
 }
 #Celsius {
   color: #939aa9;
 }
 #Celsius:hover {
   text-decoration: none;
+  cursor: default;
+  color: #2bb3a9;
 }
 
 img {
