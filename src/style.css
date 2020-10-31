@@ -41,6 +41,7 @@ hr {
 .col-2 {
   padding-left: 10px;
   padding-right: 10px;
+  border: 1px, solid, grey;
 }
 .col-4 {
   padding-bottom: 0px;
