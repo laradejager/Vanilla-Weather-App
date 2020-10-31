@@ -85,9 +85,17 @@ function showFahrenheitTemp(event) {
   let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
-
-let celsiusTemperature = null;
 let fahrenheitLink = document.querySelector("#Fahrenheit");
 fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector(".TodayTemp");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+let celsiusLink = document.querySelector("#Celsius");
+celsiusLink.addEventListener("click", showCelsiusTemp);
+
+let celsiusTemperature = null;
 
 search("New York");
