@@ -2,7 +2,9 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px;
+  border: 1px solid grey;
 }
+
 #currentweather-button {
   position: relative;
   left: 10px;
@@ -43,11 +45,7 @@ hr {
   padding-right: 10px;
   border: 1px, solid, grey;
 }
-.col-4 {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  height: 50%;
-}
+
 .TodayDetails {
   font-size: 16px;
   font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
@@ -55,22 +53,18 @@ hr {
 }
 .TodayTemp {
   position: relative;
-  top: -10px;
-  left: 115px;
+  top: 0px;
+  right: -94px;
   color: #939aa9;
   font-size: 40px;
   font-weight: 300;
 }
-#tempUnits {
-  position: relative;
-  top: -61px;
-  left: 137px;
-  color: #939aa9;
-  font-size: 20px;
-  font-weight: 300;
-}
+
 #Fahrenheit {
   color: #939aa9;
+  position: relative;
+  top: -50px;
+  right: -138px;
 }
 #Fahrenheit:hover {
   text-decoration: none;
@@ -79,54 +73,26 @@ hr {
 }
 #Celsius {
   color: #939aa9;
+  font-size: 16px;
+  position: relative;
+  right: -140px;
+  font-weight: 300;
+  top: -50px;
 }
 #Celsius:hover {
   text-decoration: none;
   cursor: default;
   color: #2bb3a9;
 }
-
+.line {
+  position: relative;
+  top: -51px;
+  right: -140px;
+  color: #939aa9;
+}
 img {
   width: 150px;
   position: relative;
-  top: -55px;
-  left: 200px;
-}
-.day-of-week {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
-  color: #697182;
-  padding-top: 20px;
-}
-.temperature {
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-  color: #697182;
-  padding-top: 10px;
-}
-.fa-cloud-sun {
-  color: #2bb3a9;
-  font-size: 40px;
-  text-align: center;
-}
-.fa-cloud-rain {
-  color: #2bb3a9;
-  font-size: 40px;
-  text-align: center;
-}
-.fa-sun {
-  color: #2bb3a9;
-  font-size: 40px;
-  text-align: center;
-}
-.fa-bolt {
-  color: #2bb3a9;
-  font-size: 40px;
-  text-align: center;
-}
-#day {
-  color: #939aa9;
+  top: -45px;
+  right: -190px;
 }

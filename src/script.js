@@ -30,29 +30,12 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector(".current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-function displayForecast(response) {
-  console.log(response.data.list[0]);
-  let foreCastElement = document.querySelector("#forecast");
-  foreCastElement.innerHTML = `<div class="col-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="day-of-week">12:00</p>
-                            <i class="fas fa-cloud-sun center"></i>
-                            <p class="temperature">18°C</p>
-                        </div>
-                    </div>
-                </div>`;
-}
-
 function searchLocation(position) {
   let apiKey = "3a485b9e6f1a186e9db5df9f95bbfad7";
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
-
-  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayForecast);
 }
 
 function showTemperature(response) {
@@ -115,4 +98,4 @@ celsiusLink.addEventListener("click", showCelsiusTemp);
 
 let celsiusTemperature = null;
 
-search("New York");
+search("Vancouver");
