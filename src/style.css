@@ -36,6 +36,9 @@ hr {
 .row {
   height: 90px;
 }
+.col-4 {
+  height: 0px;
+}
 
 .TodayDetails {
   font-size: 16px;
